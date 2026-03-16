@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://behrapplications.github.io/sitemap.xml

@@ -1,48 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behr Applications</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Behr Applications – Apps Built From Your Perspective</title>
+  <meta name="description" content="Behr Applications builds user-centric mobile apps crafted with care. Designed by users, for users. Explore Fly Invoicing and G6000 Recurrent Practice." />
+  <meta property="og:title" content="Behr Applications – Apps Built From Your Perspective" />
+  <meta property="og:description" content="User-centric development for modern challenges. Crafted with care. Designed by users, for users." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#featured">Featured Apps</a></li>
-            <li><a href="#mission">Mission</a></li>
-        </ul>
-    </nav>
 
-    <header id="hero">
-        <h1>Welcome to Behr Applications</h1>
-        <p>Your one-stop solution for amazing applications.</p>
-    </header>
+  <!-- ── Navigation ─────────────────────────────────────────── -->
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" data-page="index.html">🌿 Behr Applications</a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html" data-page="index.html">Home</a></li>
+        <li><a href="apps.html" data-page="apps.html">Apps</a></li>
+        <li><a href="about.html" data-page="about.html">About</a></li>
+        <li><a href="blog.html" data-page="blog.html">Blog</a></li>
+        <li><a href="faq.html" data-page="faq.html">FAQ</a></li>
+        <li><a href="contact.html" data-page="contact.html" class="btn-nav">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section id="featured">
-        <h2>Featured Apps</h2>
-        <div class="app">
-            <h3>App One</h3>
-            <p>Description of App One.</p>
+  <!-- Mobile Nav -->
+  <div id="nav-mobile" class="nav-mobile" role="dialog" aria-label="Mobile navigation">
+    <a href="index.html" data-page="index.html">Home</a>
+    <a href="apps.html" data-page="apps.html">Apps</a>
+    <a href="about.html" data-page="about.html">About</a>
+    <a href="blog.html" data-page="blog.html">Blog</a>
+    <a href="faq.html" data-page="faq.html">FAQ</a>
+    <a href="contact.html" data-page="contact.html" class="btn-nav-mobile">Contact</a>
+  </div>
+
+  <main>
+
+    <!-- ── Hero ────────────────────────────────────────────────── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob-2" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-label fade-in">🌿 User-Centric Development</div>
+          <h1 id="hero-heading" class="fade-in fade-in-delay-1">
+            Apps Built From<br /><span>Your Perspective</span>
+          </h1>
+          <p class="hero-sub fade-in fade-in-delay-2">
+            User-centric development for modern challenges. Crafted with care.
+            Designed by users, for users.
+          </p>
+          <div class="hero-cta fade-in fade-in-delay-3">
+            <a href="apps.html" class="btn btn-primary btn-lg">Explore Our Apps</a>
+            <a href="about.html" class="btn btn-secondary btn-lg">Learn More</a>
+          </div>
         </div>
-        <div class="app">
-            <h3>App Two</h3>
-            <p>Description of App Two.</p>
-        </div>
-        <div class="app">
-            <h3>App Three</h3>
-            <p>Description of App Three.</p>
-        </div>
+      </div>
     </section>
 
-    <section id="mission">
-        <h2>Our Mission</h2>
-        <p>At Behr Applications, our mission is to provide innovative solutions that enhance user experiences and streamline processes.</p>
+    <!-- ── Why Behr Applications ──────────────────────────────── -->
+    <section class="section why-section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Philosophy</span>
+          <h2 id="why-heading">Why Behr Applications</h2>
+          <p>We believe software should serve people — thoughtfully crafted from real experience.</p>
+        </div>
+        <div class="grid grid-4">
+          <div class="philosophy-card">
+            <div class="card-icon" aria-hidden="true">🧑‍💻</div>
+            <h3>Built by Users</h3>
+            <p>Our apps are created by people who use them — real professionals solving real problems.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="card-icon" aria-hidden="true">🎯</div>
+            <h3>For Users</h3>
+            <p>Every feature, every screen is designed with the end user in mind, not developer convenience.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="card-icon" aria-hidden="true">💎</div>
+            <h3>With Care</h3>
+            <p>We take the time to get it right — quality over speed, always.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="card-icon" aria-hidden="true">🤝</div>
+            <h3>Sympathetic Development</h3>
+            <p>We understand your workflow because we live it. Our development process starts with empathy.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Behr Applications. All rights reserved.</p>
-    </footer>
+    <!-- ── Featured Apps ──────────────────────────────────────── -->
+    <section class="section" aria-labelledby="apps-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Our Applications</span>
+          <h2 id="apps-heading">Featured Apps</h2>
+          <p>Purposefully built tools for aviation professionals and beyond.</p>
+        </div>
+        <div class="grid grid-2">
+          <!-- Fly Invoicing -->
+          <article class="app-card">
+            <div class="app-card-header">
+              <span class="app-badge">✈️ iOS Beta</span>
+              <h3>Fly Invoicing</h3>
+            </div>
+            <div class="app-card-body">
+              <p>Mobile-first invoicing built for aviation professionals. Quick, professional, and offline-capable.</p>
+              <ul class="feature-list" aria-label="Fly Invoicing features">
+                <li>Quick invoice creation</li>
+                <li>Professional templates</li>
+                <li>Secure data handling</li>
+                <li>Offline capabilities</li>
+              </ul>
+              <div class="card-actions">
+                <a href="apps.html" class="btn btn-outline">View Details</a>
+                <a href="privacy-fly-invoicing.html" class="btn btn-ghost btn-sm">Privacy Policy</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- G6000 -->
+          <article class="app-card">
+            <div class="app-card-header">
+              <span class="app-badge">🛩️ iOS Beta</span>
+              <h3>G6000 Recurrent Practice</h3>
+            </div>
+            <div class="app-card-body">
+              <p>Structured, deliberate practice support for aviation professionals who take development seriously.</p>
+              <ul class="feature-list" aria-label="G6000 features">
+                <li>Practice tracking</li>
+                <li>Progress analytics</li>
+                <li>User-friendly interface</li>
+                <li>Data privacy focused</li>
+              </ul>
+              <div class="card-actions">
+                <a href="apps.html" class="btn btn-outline">View Details</a>
+                <a href="privacy-g6000.html" class="btn btn-ghost btn-sm">Privacy Policy</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Newsletter ─────────────────────────────────────────── -->
+    <section class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <span class="section-label" style="color:var(--honey-gold);">Stay Updated</span>
+        <h2 id="newsletter-heading">Join Our Newsletter</h2>
+        <p>Get updates on new apps, features, and the philosophy behind our development.</p>
+        <form id="newsletter-form" class="newsletter-form" aria-label="Newsletter signup">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Your email address"
+            aria-label="Email address"
+            required
+          />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-note">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────── -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">🌿 Behr Applications</a>
+          <p>Building user-centric applications with care and purpose. Designed by users, for users.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <nav class="footer-links" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="apps.html">Apps</a>
+            <a href="about.html">About</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <nav class="footer-links" aria-label="Legal links">
+            <a href="privacy-fly-invoicing.html">Fly Invoicing Privacy</a>
+            <a href="privacy-g6000.html">G6000 Privacy</a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <nav class="footer-links" aria-label="Contact links">
+            <a href="mailto:behrapplications@gmail.com">behrapplications@gmail.com</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Behr Applications. All rights reserved.</p>
+        <p><a href="mailto:behrapplications@gmail.com">behrapplications@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
