@@ -251,7 +251,9 @@
         _subject:    'New Contact from Behr Applications Website'
       };
 
-      fetch('https://formspree.io/f/placeholder', {
+      /* TODO: Replace 'YOUR_FORM_ID' with your Formspree form ID.
+         Visit https://formspree.io to create a free form and get your ID. */
+      fetch('https://formspree.io/f/YOUR_FORM_ID', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

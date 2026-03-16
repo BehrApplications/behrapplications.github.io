@@ -112,7 +112,7 @@ The contact form posts to Formspree. To activate it for production:
 3. In `main.js`, replace the placeholder URL:
    ```js
    // Change:
-   fetch('https://formspree.io/f/placeholder', ...)
+   fetch('https://formspree.io/f/YOUR_FORM_ID', ...)
    // To:
    fetch('https://formspree.io/f/xabcdefg', ...)
    ```
