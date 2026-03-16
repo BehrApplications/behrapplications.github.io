@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="inquiryType">Inquiry Type:</label>
+        <select id="inquiryType" name="inquiryType">
+            <option value="general">General</option>
+            <option value="bugReport">Bug Report</option>
+            <option value="featureRequest">Feature Request</option>
+            <option value="partnership">Partnership</option>
+        </select>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <label for="newsletter">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            Subscribe to our newsletter
+        </label>
+
+        <input type="text" name="honeypot" style="display:none;">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('contactForm').onsubmit = function(event) {
+            var honeypot = document.querySelector('input[name="honeypot"]').value;
+            if (honeypot) {
+                // If honeypot field is filled, prevent form submission
+                event.preventDefault();
+                alert('Spam detected!');
+            }
+        };
+    </script>
+</body>
+</html>
