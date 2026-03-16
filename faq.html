@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+        .accordion {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+            padding: 10px;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+        .accordion.active, .accordion:hover {
+            background-color: #ccc;
+        }
+        .panel {
+            padding: 0 10px;
+            display: none;
+            overflow: hidden;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Frequently Asked Questions</h1>
+
+    <button class="accordion">App Development Philosophy</button>
+    <div class="panel">
+        <p>Our development philosophy revolves around user-centric design, agile methodologies, and iterative improvement. We believe in building applications that not only meet current needs but are also adaptable to future demands.</p>
+    </div>
+
+    <button class="accordion">Privacy and Security</button>
+    <div class="panel">
+        <p>We prioritize user privacy and data security. Our applications use encryption, secure access protocols, and comply with data protection regulations to ensure that user information is safe.</p>
+    </div>
+
+    <button class="accordion">Pilots by Pilots Approach</button>
+    <div class="panel">
+        <p>Our approach focuses on engaging real users in the development process. We conduct pilot programs where feedback is gathered from users to refine features and enhance usability before the final release.</p>
+    </div>
+
+    <button class="accordion">Future Plans</button>
+    <div class="panel">
+        <p>Looking ahead, we plan to expand our offerings with new features and integrations based on user feedback and emerging technologies. We are committed to continuous improvement and innovation.</p>
+    </div>
+
+    <button class="accordion">Support</button>
+    <div class="panel">
+        <p>Our support team is available 24/7 to assist users with any inquiries or issues. We provide multiple channels for support, including chat, email, and phone.</p>
+    </div>
+
+    <script>
+        const accordions = document.getElementsByClassName('accordion');
+        for (let i = 0; i < accordions.length; i++) {
+            accordions[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
