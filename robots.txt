@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Allow: /public/
+
+# Sitemap settings
+Sitemap: https://behrapplications.github.io/sitemap.xml
