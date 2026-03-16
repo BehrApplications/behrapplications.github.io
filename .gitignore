@@ -1,0 +1,22 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+*.sublime-workspace
+*.sublime-project
+*.idea/
+*.vscode/
+
+# Logs
+*.log
+
+# Dependency directories
+node_modules/
+bower_components/
+yarn-error.log
+
+# Build artifacts
+/dist/
+/build/
+/.cache/
