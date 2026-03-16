@@ -1135,7 +1135,6 @@ select.form-control {
   left: -9999px;
   opacity: 0;
   pointer-events: none;
-  tabindex: -1;
 }
 
 /* Form alerts */

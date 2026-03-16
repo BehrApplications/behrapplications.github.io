@@ -28,6 +28,7 @@
 
   /* ── Mobile Nav Toggle ──────────────────────────────────── */
   (function initMobileNav() {
+    var nav = $('nav.site-nav');
     var toggle = $('#nav-toggle');
     var mobileNav = $('#nav-mobile');
     if (!toggle || !mobileNav) return;
@@ -57,7 +58,6 @@
       }
     });
 
-    var nav = $('nav.site-nav');
   })();
 
   /* ── Active Nav Link ────────────────────────────────────── */
